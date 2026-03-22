@@ -11,14 +11,9 @@
 
 ```
 langchain_agent/
-├── langchain_skillTest.py      # 核心 Agent 和工具定义（核心代码）
-├── LangchainAgent_test.py      # 测试和运行脚本（入口文件）
-├── README.md                   # 项目说明文档
-├── china_schools_full_info.json # 本地高校数据库（需自备/生成）
-└── data/                       # 数据缓存目录（自动生成）
-    └── buffer/
-        ├── data.json           # 中间缓存（院系/师资栏目URL）
-        └── teacher_profiles.json # 最终教师信息数据
+├── langchain_skillTest.py      # 核心 Agent 和工具定义
+├── LangchainAgent_test.py      # 测试和运行脚本
+└── README.md
 ```
 
 ## 🎯 核心组件
@@ -106,6 +101,10 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 BUFFER_FILE_PATH = os.path.join(BASE_DIR, "data", "buffer", "data.json")
 TEACHER_PROFILES_BUFFER_FILE_PATH = os.path.join(BASE_DIR, "data", "buffer", "teacher_profiles.json")
+
+# 替换 langchain_skillTest.py 中第263、264的缓存的路径
+BUFFER_FILE_PATH = r"F:\My_Project\skillCreator_System\data\buffer\data.json"
+TEACHER_PROFILES_BUFFER_FILE_PATH = r"F:\My_Project\skillCreator_System\data\buffer\teacher_profiles.json"
 ```
 
 ### 3. 高校数据库准备
