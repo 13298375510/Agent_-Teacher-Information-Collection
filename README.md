@@ -156,7 +156,7 @@ result = CleanTeacherProfiles_agent.invoke({
 3. 部分网站可能需要 Selenium 处理 JavaScript 渲染
 4. API Key 请妥善保管，不要提交到版本控制系统
 
-🌟 支持项目
+## 🌟 支持项目
 
 如果这个项目对你有帮助，欢迎点击仓库右上角的 Star ⭐ 支持一下！你的鼓励是我持续优化和维护项目的最大动力～
 📄 免责声明
@@ -164,7 +164,7 @@ result = CleanTeacherProfiles_agent.invoke({
 使用本项目爬取数据时，需遵守目标网站的用户协议和相关法律法规
 开发者不对因使用本项目产生的任何法律责任负责
 
-🤝 贡献指南
+## 🤝 贡献指南
 
 如果你发现 Bug、有新功能建议，欢迎：
 Fork 本仓库
